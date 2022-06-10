@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Вход</title>
+	<style>
+	   body{
+			background: #DEB887;
+			font-family: arial, sans-serif;
+		}
+	    .single-input {
+			text-align: center;
+			display: column;
+			margin-left:30%;
+			margin-right: 30%;
+		}
+		.single-input > div {
+			margin-right: 15px;
+		}
+		fieldset {
+			border: 0;
+			padding: 0;
+		}
+		fieldset > div {
+			margin-bottom: 30px;
+		}
+		label {
+			display: block;
+		}
+		input {
+	    	padding: 10px;
+	    	width: 200px;
+	    }
+	    input:valid {
+	    	border: 2px solid #F5DEB3;
+	    }
+	    input:invalid {
+	    	border: 2px solid #A0522D;
+	    }
+	    button {
+	    	background: #F5DEB3;
+	    	border: 0;
+	    	color: black;
+	    	width: 224;
+	    	padding: 10px;
+	    	position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+	    }
+	</style>
+</head>
+<body>
+	<h1 align="center">Авторизация</h1>
+	<hr width="70%" color="#F5DEB3"><br>
+	    <form action="url_to_send_form_data" method="post">
+		    <fieldset>
+		    	<hr width="20%" color="#A0522D">
+		    	<div class="single-input">
+					<label for="number"><h3>Регистрационный номер</h3></label>
+					<input id="number" type="text" name="number" required />
+				</div>
+				<div class="single-input">
+					<label for="password"><h3>Пароль</h3></label>
+					<input id="password" type="password" name="pasword" required />
+				</div>
+				<hr width="20%" color="#A0522D">
+				<button type="submit">Войти</button>
+		    </fieldset>
+	    </form><br>
+	    <hr width="70%" color="#F5DEB3">
+</body>
+</html>
